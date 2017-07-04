@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    tools:context="com.tshibakela.netbankcup.Main2Activity">
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="46dp"
+        android:layout_marginRight="46dp"
+        android:layout_marginTop="20dp"
+        android:layout_toLeftOf="@+id/textView30"
+        android:layout_toStartOf="@+id/textView30"
+        android:text="Match Results"
+        android:textAllCaps="true"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold|italic"
+        tools:layout_editor_absoluteX="34dp"
+        tools:layout_editor_absoluteY="182dp" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/checkBox9"
+        android:layout_alignBottom="@+id/checkBox9"
+        android:layout_alignEnd="@+id/textView24"
+        android:layout_alignRight="@+id/textView24"
+        android:text="Loss"
+        android:textColor="@android:color/holo_blue_bright"
+        tools:layout_editor_absoluteX="58dp"
+        tools:layout_editor_absoluteY="208dp" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/checkBox11"
+        android:layout_alignBottom="@+id/checkBox11"
+        android:layout_alignEnd="@+id/textView22"
+        android:layout_alignRight="@+id/textView22"
+        android:layout_marginEnd="27dp"
+        android:layout_marginRight="27dp"
+        android:text="Draw"
+        android:textColor="@android:color/holo_red_light"
+        tools:layout_editor_absoluteX="58dp"
+        tools:layout_editor_absoluteY="240dp" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/checkBox7"
+        android:layout_alignBottom="@+id/checkBox7"
+        android:layout_alignLeft="@+id/textView23"
+        android:layout_alignStart="@+id/textView23"
+        android:text="Win"
+        android:textColor="@android:color/holo_red_dark"
+        tools:layout_editor_absoluteX="58dp"
+        tools:layout_editor_absoluteY="275dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/checkBox7"
+        android:layout_alignBottom="@+id/checkBox7"
+        android:layout_alignLeft="@+id/checkBox8"
+        android:layout_alignStart="@+id/checkBox8"
+        android:background="@android:color/background_light"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:backgroundTintMode="add"
+        android:textColor="@android:color/holo_red_dark"
+        tools:layout_editor_absoluteX="176dp"
+        tools:layout_editor_absoluteY="193dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/checkBox11"
+        android:layout_alignStart="@+id/checkBox11"
+        android:layout_below="@+id/checkBox11"
+        android:layout_marginTop="23dp"
+        android:background="@android:color/background_light"
+        android:backgroundTint="@android:color/background_light"
+        android:backgroundTintMode="add"
+        android:textColor="@android:color/holo_red_dark"
+        tools:layout_editor_absoluteX="176dp"
+        tools:layout_editor_absoluteY="225dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/checkBox11"
+        android:layout_alignBottom="@+id/checkBox11"
+        android:layout_alignLeft="@+id/checkBox10"
+        android:layout_alignStart="@+id/checkBox10"
+        android:background="@android:color/background_light"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:backgroundTintMode="add"
+        android:textColor="@android:color/holo_red_dark"
+        tools:layout_editor_absoluteX="176dp"
+        tools:layout_editor_absoluteY="260dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/checkBox11"
+        android:layout_alignStart="@+id/checkBox11"
+        android:layout_alignTop="@+id/textView22"
+        android:layout_marginTop="64dp"
+        android:background="@android:color/background_light"
+        android:backgroundTint="@android:color/background_light"
+        android:backgroundTintMode="add"
+        android:textColor="@android:color/holo_red_dark"
+        tools:layout_editor_absoluteX="310dp"
+        tools:layout_editor_absoluteY="189dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/checkBox9"
+        android:layout_alignBottom="@+id/checkBox9"
+        android:layout_alignLeft="@+id/textView31"
+        android:layout_alignStart="@+id/textView31"
+        android:background="@android:color/background_light"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:backgroundTintMode="add"
+        android:textColor="@android:color/holo_red_dark"
+        tools:layout_editor_absoluteX="310dp"
+        tools:layout_editor_absoluteY="225dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkBox10"
+        android:layout_marginEnd="93dp"
+        android:layout_marginRight="93dp"
+        android:layout_marginTop="20dp"
+        android:layout_toLeftOf="@+id/checkBox6"
+        android:layout_toStartOf="@+id/checkBox6"
+        android:background="@android:color/background_light"
+        android:backgroundTint="@android:color/background_light"
+        android:backgroundTintMode="add"
+        android:textColor="@android:color/holo_red_dark"
+        tools:layout_editor_absoluteX="310dp"
+        tools:layout_editor_absoluteY="260dp" />
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView22"
+        android:layout_alignBottom="@+id/textView22"
+        android:layout_alignLeft="@+id/checkBox9"
+        android:layout_alignStart="@+id/checkBox9"
+        android:text="Team A"
+        android:textAllCaps="true"
+        android:textColor="@android:color/background_dark" />
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView35"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:text="Team B"
+        android:textAllCaps="true"
+        android:textColor="@android:color/background_dark" />
+
+    <TextView
+        android:id="@+id/textView35"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView23"
+        android:layout_alignStart="@+id/textView23"
+        android:layout_below="@+id/textView30"
+        android:layout_marginTop="14dp"
+        android:text="Goals"
+        android:textColor="?attr/actionModeSplitBackground" />
+
+    <EditText
+        android:id="@+id/editText16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView35"
+        android:layout_alignEnd="@+id/checkBox9"
+        android:layout_alignLeft="@+id/textView30"
+        android:layout_alignRight="@+id/checkBox9"
+        android:layout_alignStart="@+id/textView30"
+        android:layout_alignTop="@+id/textView35"
+        android:background="@android:color/background_light"
+        android:backgroundTint="@android:color/holo_orange_dark"
+        android:ems="10"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/editText17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editText16"
+        android:layout_alignEnd="@+id/checkBox10"
+        android:layout_alignLeft="@+id/textView31"
+        android:layout_alignRight="@+id/checkBox10"
+        android:layout_alignStart="@+id/textView31"
+        android:layout_alignTop="@+id/editText16"
+        android:background="@android:color/holo_blue_bright"
+        android:ems="10"
+        android:inputType="number" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/textView22"
+        android:layout_toStartOf="@+id/textView22">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/NetBank"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/images"
+    tools:context="com.tshibakela.netbankcup.MainActivity">
+
+
+
+    <Button
+        android:id="@+id/off1btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Off-Side Goal"
+        android:layout_below="@+id/teamA"
+        android:layout_marginTop="11dp"
+        android:layout_toLeftOf="@+id/textView5"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/goalA"
+        android:layout_centerHorizontal="true"
+        android:text="VS"
+        android:textColor="@android:color/holo_blue_bright"
+        tools:layout_editor_absoluteX="52dp"
+        tools:layout_editor_absoluteY="24dp"
+        tools:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/goalA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/teamA"
+        android:layout_alignLeft="@+id/teamA"
+        android:layout_alignStart="@+id/teamA"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:background="@android:color/background_light"
+        android:text="0"
+        android:textColor="@android:color/holo_red_dark"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="124dp" />
+
+    <TextView
+        android:id="@+id/goalB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/progressBar"
+        android:layout_alignEnd="@+id/teamB"
+        android:layout_alignRight="@+id/teamB"
+        android:layout_marginEnd="27dp"
+        android:layout_marginRight="27dp"
+        android:background="@android:color/background_light"
+        android:backgroundTint="@android:color/background_light"
+        android:text="0"
+        android:textColor="@android:color/holo_orange_light"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="21dp"
+        tools:layout_editor_absoluteY="25dp" />
+
+    <TextView
+        android:id="@+id/Team1"
+        android:layout_width="100dp"
+        android:layout_height="39dp"
+        android:layout_alignEnd="@+id/teamA"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/teamA"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Team A"
+        android:textColor="?android:attr/colorAccent"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="34dp" />
+
+    <TextView
+        android:id="@+id/Team2"
+        android:layout_width="106dp"
+        android:layout_height="39dp"
+        android:layout_alignEnd="@+id/teamB"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/teamB"
+        android:backgroundTint="@color/colorAccent"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Team B"
+        android:textColor="@android:color/holo_orange_dark"
+        tools:layout_editor_absoluteX="185dp"
+        tools:layout_editor_absoluteY="34dp" />
+
+    <Button
+        android:id="@+id/teamA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/progressBar"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="31dp"
+        android:layout_toLeftOf="@+id/textView5"
+        android:layout_toStartOf="@+id/textView5"
+        android:background="@android:color/transparent"
+        android:text="Score"
+        android:textColor="@color/colorPrimary"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="150dp" />
+
+    <Button
+        android:id="@+id/teamB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/off2btn"
+        android:layout_alignLeft="@+id/detailsbtn"
+        android:layout_alignStart="@+id/detailsbtn"
+        android:background="@android:color/transparent"
+        android:text="Score"
+        android:textColor="@color/colorPrimary"
+        tools:layout_editor_absoluteX="185dp"
+        tools:layout_editor_absoluteY="150dp" />
+
+    <TimePicker
+        android:id="@+id/timePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="10dp"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/textView"
+        android:backgroundTint="@android:color/holo_orange_dark" />
+
+    <TextClock
+        android:id="@+id/Time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/timePicker"
+        android:layout_toEndOf="@+id/textView"
+        android:layout_toRightOf="@+id/textView"
+        android:textColor="@android:color/holo_red_light" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Time"
+        android:layout_alignBottom="@+id/Time"
+        android:layout_alignLeft="@+id/off1btn"
+        android:layout_alignStart="@+id/off1btn"
+        android:text="Time: "
+        android:textColor="@android:color/background_dark" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@android:style/Widget.DeviceDefault.Light.ProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Team2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:backgroundTint="@android:color/holo_red_dark" />
+
+    <Button
+        android:id="@+id/detailsbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/off2btn"
+        android:layout_marginTop="62dp"
+        android:text="More Details" />
+
+    <Button
+        android:id="@+id/off2btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Off-Side Goal"
+        android:layout_alignBaseline="@+id/off1btn"
+        android:layout_alignBottom="@+id/off1btn"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignLeft="@+id/Team2"
+        android:layout_alignStart="@+id/Team2" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/off2btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp"
+        android:scaleX="4"
+        android:scaleY="4"
+        android:scrollY="2dp"
+        android:text="NetBank Cup"
+        android:textColor="@android:color/holo_blue_bright" />
+
+    <Button
+        android:id="@+id/btn10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start"
+        android:layout_above="@+id/Time"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+</RelativeLayout>
+
+
+
